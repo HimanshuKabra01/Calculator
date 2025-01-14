@@ -43,9 +43,10 @@
       <br>
       <br>
       <button onclick="
-      initial = ''
+      localStorage.removeItem('initial')
+      initial = '';
       document.querySelector('.js-calcula')
-      .innerHTML = ''
+        .innerHTML = initial;
       " class="nOo">Clear</button> 
       <script src="calculator.js">
       </script>
