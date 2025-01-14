@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Calculator </title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+    <body>
+      <p class="js-calcula"></p></p>
+      <button onclick=" updateCalculation('1') " class="nOo">1</button>
+
+      <button onclick=" updateCalculation('2') " class="nOo">2</button>
+
+      <button onclick=" updateCalculation('3') " class="nOo">3</button>
+
+      <button onclick=" updateCalculation('+') " class="maths">+</button>
+      <p> </p>
+
+      <button onclick=" updateCalculation('4') " class="nOo">4</button>
+
+      <button onclick=" updateCalculation('5') " class="nOo">5</button>
+
+      <button onclick=" updateCalculation('6') " class="nOo">6</button>
+
+      <button onclick=" updateCalculation('-') " class="maths">-</button>
+      <p> </p>
+
+      <button onclick=" updateCalculation('7') " class="nOo">7</button>
+
+      <button onclick=" updateCalculation('8') " class="nOo">8</button>
+
+      <button onclick=" updateCalculation('9') " class="nOo">9</button>
+
+      <button onclick=" updateCalculation('*') " class="maths">*</button>
+      <p> </p>
+      <button onclick=" updateCalculation('0') " class="nOo">0</button>
+      <button onclick=" updateCalculation('.') " class="nOo">.</button>
+      <button onclick="
+      initial = eval(initial)
+      document.querySelector('.js-calcula')
+        .innerHTML = initial;
+       " class="nOo">=</button>
+      <button onclick=" updateCalculation('/')" class="maths">/</button>
+      <br>
+      <br>
+      <button onclick="
+      initial = ''
+      document.querySelector('.js-calcula')
+      .innerHTML = ''
+      " class="nOo">Clear</button> 
+      <script src="calculator.js">
+      </script>
+    </body>
+</html>
